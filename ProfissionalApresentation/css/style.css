@@ -1,0 +1,26 @@
+html {
+  background-color: #1c3a5f;
+}
+
+main {
+  background-color: #b3d9ff;
+  margin: 1.25rem;
+  padding: 1.25rem;
+  border-radius: 1.75rem;
+}
+
+.personal-image {
+  width: 10rem;
+  height: 14rem;
+  display: inline;
+  border-radius: 1.75rem;
+}
+
+.name {
+  display: inline;
+  word-break: break-all;
+}
+
+.links a {
+  color: #1c3a5f;
+}
