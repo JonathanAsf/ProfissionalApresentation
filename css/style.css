@@ -1,5 +1,6 @@
 html {
   background-color: #1c3a5f;
+  color: #010101;
 }
 
 .background {
@@ -49,6 +50,14 @@ main {
 .main-names h2 {
   margin: 0;
 }
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
 .links a {
   padding: 0.5rem;
   color: #1c3a5f;
@@ -57,12 +66,9 @@ main {
 }
 
 .links-block {
-  display: grid;
-  grid-template-columns: auto auto;
-  margin: 0.5rem auto;
-  text-align: center;
-  justify-content: center;
-  align-content: center;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .links-block img {
@@ -101,7 +107,7 @@ footer {
   left: 0;
   width: 100%;
   background-color: #1e3a5f;
-  color: white;
+  color: #f1f1f1;
   text-align: center;
   padding: 10px 0;
   font-size: 14px;
@@ -109,4 +115,9 @@ footer {
   height: 5rem;
   background-color: #00111d;
   text-align: center;
+}
+
+.links-block a:hover {
+  color: #f1f1f1;
+  cursor: pointer;
 }
