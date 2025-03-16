@@ -1,6 +1,6 @@
 html {
   background-color: #1c3a5f;
-  color: #010101;
+  color: #111;
 }
 
 .background {
@@ -10,7 +10,8 @@ html {
 p,
 span,
 a {
-  font-family: "Roboto Condensed", "Roboto", sans-serif;
+  line-height: 1.75rem;
+  font-family: "Gotham", "Roboto", sans-serif;
   font-size: 1.25rem;
 }
 
@@ -63,6 +64,7 @@ main {
   color: #1c3a5f;
   text-decoration: none;
   font-size: 1.5rem;
+  transition: all 0.3s ease-out;
 }
 
 .links-block {
@@ -99,6 +101,7 @@ main {
   max-height: 5rem;
   width: 5rem;
   margin: 1rem 1rem;
+  transition: transform 0.3s ease-in-out;
 }
 
 footer {
@@ -117,7 +120,11 @@ footer {
   text-align: center;
 }
 
-.links-block a:hover {
-  color: #f1f1f1;
-  cursor: pointer;
+a:hover,
+a:focus {
+  color: #111;
+}
+
+.language-img:hover {
+  transform: scale(1.4); /* Aumenta a imagem em 30% */
 }
