@@ -5,6 +5,7 @@ html {
 
 .background {
   display: flex;
+  flex-direction: column;
 }
 
 p,
@@ -31,8 +32,8 @@ main {
   margin: 5rem auto;
   padding: 2rem;
   border-radius: 1.75rem;
-  width: 75rem;
-  height: 40rem;
+  width: 100vw;
+  height: auto;
 }
 
 .main-information {
@@ -105,9 +106,6 @@ main {
 }
 
 footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
   width: 100%;
   color: #f1f1f1;
   text-align: center;
