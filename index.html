@@ -3,13 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- HeadSite -->
     <title>Jonathan Farias</title>
-    <link rel="icon" href="/assets/logo.svg" />
-    <!-- Css -->
+    <link rel="icon" href="./assets/logo.svg" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <!-- Font Import -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,21 +16,17 @@
   </head>
   <body>
     <div class="background">
-      <!-- <img src="./assets/logo.svg" alt="" class="logo" /> -->
       <main>
         <div class="teste">
           <div class="main-information">
-            <img src="/assets/me.jpg" alt class="personal-image" />
+            <img src="./assets/me.jpg" alt class="personal-image" />
             <div class="main-names">
-              <h1>Jonathan Farias</h1>
-              <h2>Especialista em TI</h2>
+              <h1 id="title">Jonathan Farias</h1>
+              <h2 id="profession">Especialista em TI</h2>
             </div>
             <div class="links">
               <div class="links-block">
-                <img
-                  src="/assets/linkedin.svg"
-                  alt="Icone de direcionamento para o Linkedin"
-                />
+                <img src="./assets/linkedin.svg" alt="Linkedin" />
                 <a
                   href="https://www.linkedin.com/in/jonathanasf/"
                   class="links-social"
@@ -41,88 +34,164 @@
                 >
               </div>
               <div class="links-block">
-                <img
-                  src="/assets/github.svg"
-                  alt="Icone de direcionamento para o Github"
-                />
+                <img src="./assets/github.svg" alt="Github" />
                 <a href="https://github.com/JonathanAsf" class="links-social"
-                  >Github
-                </a>
+                  >Github</a
+                >
               </div>
               <div class="links-block">
-                <img
-                  src="/assets/email.svg"
-                  alt="Icone de direcionamento para o E-mail"
-                />
+                <img src="./assets/email.svg" alt="E-mail" />
                 <a
                   href="mailto:jonathan.a.farias@gmail.com"
                   class="links-social"
-                  >E-mail
-                </a>
+                  >E-mail</a
+                >
               </div>
               <div class="links-block">
-                <img
-                  src="/assets/personal.svg"
-                  alt="Icone de direcionamento para o portfolio"
-                />
+                <img src="./assets/personal.svg" alt="Portfolio" />
                 <a
                   href="https://portfolio-six-theta-87.vercel.app/"
                   class="links-social"
-                  >Portfolio
-                </a>
+                  >Portfolio</a
+                >
               </div>
             </div>
           </div>
-          <h2 class="sobre">Sobre Mim</h2>
-          <span>Olá, seja bem vindo ao meu Resumo Profissional</span>
-          <p class="sobre-conteudo">
+
+          <h2 class="sobre" id="about_me_title">Sobre Mim</h2>
+          <p id="greeting">Olá, seja bem vindo ao meu Resumo Profissional</p>
+          <p class="sobre-conteudo" id="about_me_content">
             Sou um profissional de tecnologia com forte capacidade analítica e
             experiência em desenvolvimento, automação e suporte técnico.
           </p>
-          <p>
+          <p id="skills">
             Versátil em HTML, CSS, JavaScript, Java, C e VBA, além de possuir
             conhecimento avançado no pacote Office, especialmente Excel e VBA
             para otimização de processos.
           </p>
-          <p>
+          <p id="education">
             Atualmente, curso <strong>Ciência da Computação</strong> e busco
             desenvolver soluções inovadoras para melhorar eficiência e
-            produtividade. Tenho proficiência avançada na língua ingles e básica
-            em espanhol e alemão.
+            produtividade. Tenho proficiência avançada na língua inglesa e
+            básica em espanhol e alemão.
           </p>
-          <p>
+          <p id="portfolio_message">
             Para mais detalhes, acesse o meu Portfolio e visite minhas redes
             sociais!
           </p>
+
           <div class="idiomas">
-            <h2>Selecione o melhor idioma para você!</h2>
-            <a href="/english/index.html">
+            <h2 id="select_language">Selecione o melhor idioma para você!</h2>
+            <div
+              class="language-div"
+              data-idioma="deut"
+              data-alt-idioma="pt-br"
+              data-img="germanylang.png"
+            >
               <img
                 class="language-img"
-                src="/assets/usalang.png"
-                alt="Bandeira dos Estados Unidos - Altera o idioma"
+                src="./assets/germanylang.png"
+                alt="Bandeira da Alemanha"
               />
-            </a>
-            <a href="/spanish/index.html">
+            </div>
+            <div
+              class="language-div"
+              data-idioma="esp"
+              data-alt-idioma="pt-br"
+              data-img="spanishlang.png"
+            >
               <img
                 class="language-img"
-                src="/assets/spanishlang.png"
-                alt="Bandeira da Espanha - Altera o idioma"
+                src="./assets/spanishlang.png"
+                alt="Bandeira da Espanha"
               />
-            </a>
-            <a href="/deutsch/index.html">
+            </div>
+            <div
+              class="language-div"
+              data-idioma="eng"
+              data-alt-idioma="pt-br"
+              data-img="usalang.png"
+            >
               <img
                 class="language-img"
-                src="/assets/germanylang.png"
-                alt="Bandeira da Alemanha - Altera o idioma"
+                src="./assets/usalang.png"
+                alt="Bandeira dos EUA"
               />
-            </a>
+            </div>
+            <div
+              class="language-div"
+              data-idioma="pt-br"
+              data-alt-idioma="eng"
+              data-img="brasillang.png"
+              >
+              <img
+                class="language-img"
+                src="./assets/brasillang.png"
+                alt="Bandeira do Brasil"
+              />
+              </div>
+          </div>
+            
           </div>
         </div>
       </main>
       <footer>
-        <p>Desenvolvido por Jonathan Farias</p>
+        <p id="credit">Desenvolvido por Jonathan Farias</p>
       </footer>
     </div>
+
+    <!-- SCRIPT de tradução -->
+<script>
+  const textosOriginais = {};
+
+  window.onload = function () {
+    // Armazena os textos originais do HTML
+    textosOriginais.title = document.getElementById("title").innerText;
+    textosOriginais.profession = document.getElementById("profession").innerText;
+    textosOriginais.about_me_title = document.getElementById("about_me_title").innerText;
+    textosOriginais.greeting = document.getElementById("greeting").innerText;
+    textosOriginais.about_me_content = document.getElementById("about_me_content").innerText;
+    textosOriginais.skills = document.getElementById("skills").innerText;
+    textosOriginais.education = document.getElementById("education").innerText;
+    textosOriginais.portfolio_message = document.getElementById("portfolio_message").innerText;
+    textosOriginais.select_language = document.getElementById("select_language").innerText;
+
+    // Evento de clique nas bandeiras
+    document.querySelectorAll(".language-div").forEach((div) => {
+      div.addEventListener("click", function () {
+        const idioma = div.getAttribute("data-idioma");
+
+        if (idioma === "pt-br") {
+          // Restaura os textos originais
+          document.getElementById("title").innerText = textosOriginais.title;
+          document.getElementById("profession").innerText = textosOriginais.profession;
+          document.getElementById("about_me_title").innerText = textosOriginais.about_me_title;
+          document.getElementById("greeting").innerText = textosOriginais.greeting;
+          document.getElementById("about_me_content").innerText = textosOriginais.about_me_content;
+          document.getElementById("skills").innerText = textosOriginais.skills;
+          document.getElementById("education").innerText = textosOriginais.education;
+          document.getElementById("portfolio_message").innerText = textosOriginais.portfolio_message;
+          document.getElementById("select_language").innerText = textosOriginais.select_language;
+        } else {
+          // Carrega o idioma via JSON
+          fetch(`./translations/${idioma}.json`)
+            .then((response) => response.json())
+            .then((data) => {
+              document.getElementById("title").innerText = data.title;
+              document.getElementById("profession").innerText = data.profession;
+              document.getElementById("about_me_title").innerText = data.about_me_title;
+              document.getElementById("greeting").innerText = data.greeting;
+              document.getElementById("about_me_content").innerText = data.about_me_content;
+              document.getElementById("skills").innerText = data.skills;
+              document.getElementById("education").innerText = data.education;
+              document.getElementById("portfolio_message").innerText = data.portfolio_message;
+              document.getElementById("select_language").innerText = data.select_language;
+            })
+            .catch((error) => console.error("Erro ao carregar o idioma:", error));
+        }
+      });
+    });
+  };
+</script>
   </body>
 </html>

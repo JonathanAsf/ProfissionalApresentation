@@ -91,7 +91,7 @@ h2 {
   align-items: center;
 }
 
-.language-img {
+.language-DIV {
   max-height: 5rem;
   width: 5rem;
   margin: 1rem 1rem;
@@ -114,6 +114,7 @@ a:focus {
 }
 
 .language-img:hover {
+  cursor: pointer;
   transform: scale(1.4); /* Aumenta a imagem em 30% */
 }
 
