@@ -1,24 +1,19 @@
 html {
+  height: 100vh;
   background-color: #1c3a5f;
-  color: #111;
 }
-
-.background {
-  display: flex;
-  flex-direction: column;
-}
-
 p,
 span,
 a {
-  line-height: 1.75rem;
-  font-family: "Gotham", "Roboto", sans-serif;
+  justify-content: justify;
+  line-height: 1.85rem;
+  font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
 }
 
 h1,
 h2 {
-  font-family: "Noto Sans";
+  font-family: "Open Sans";
 }
 .logo {
   width: 10rem;
@@ -27,13 +22,13 @@ h2 {
   margin-left: 1rem;
 }
 
-main {
+.teste {
+  width: 1104px;
+  height: 703px;
   background-color: #b3d9ff;
   margin: 5rem auto;
   padding: 2rem;
   border-radius: 1.75rem;
-  width: 100vw;
-  height: auto;
 }
 
 .main-information {
@@ -82,7 +77,7 @@ main {
 }
 
 .sobre {
-  margin: 1.25 0;
+  margin: 1.25rem 0;
 }
 
 .language-img {
@@ -94,8 +89,6 @@ main {
 .idiomas {
   display: flex;
   align-items: center;
-  bottom: 0;
-  margin: 2rem auto;
 }
 
 .language-img {
@@ -106,12 +99,12 @@ main {
 }
 
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   color: #f1f1f1;
-  text-align: center;
-  padding: 10px 0;
-  font-size: 14px;
-  height: 5rem;
+  height: 5.1rem;
   background-color: #00111d;
 }
 
