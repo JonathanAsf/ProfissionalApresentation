@@ -103,7 +103,7 @@ h2 {
 }
 
 .sobre {
-  margin: 1.25rem 0;
+  margin: 0.5rem;
 }
 
 .language-img {
@@ -118,6 +118,7 @@ h2 {
 .idiomas {
   display: flex;
   align-items: center;
+  margin-button: 2rem;
 }
 
 .language-DIV {
