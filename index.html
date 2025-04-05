@@ -82,7 +82,7 @@
           Para mais detalhes, acesse o meu Portfolio e visite minhas redes
           sociais!
         </p>
-        
+
         <div class="idiomas">
           <h2 id="select_language">Selecione o melhor idioma para você!</h2>
           <div
@@ -162,6 +162,15 @@
           document.getElementById("portfolio_message").innerText;
         textosOriginais.select_language =
           document.getElementById("select_language").innerText;
+
+        // Oculta a bandeira do idioma atual ao carregar a página
+        const idiomaAtual = document.documentElement.lang;
+        document.querySelectorAll(".language-div").forEach((langDiv) => {
+          const idioma = langDiv.getAttribute("data-idioma");
+          if (idioma === idiomaAtual) {
+            langDiv.classList.add("hidden");
+          }
+        });
 
         // Evento de clique nas bandeiras
         document.querySelectorAll(".language-div").forEach((div) => {

@@ -82,6 +82,7 @@ h2 {
 }
 
 .links a {
+  text-align: start;
   padding: 0.5rem;
   color: var(--cor-terciaria);
   text-decoration: none;
@@ -91,7 +92,7 @@ h2 {
 
 .links-block {
   display: flex;
-  align-items: center;
+  align-items: start;
   gap: 8px;
 }
 
@@ -99,7 +100,6 @@ h2 {
   text-align: center;
   justify-content: center;
   align-content: center;
-  margin: auto;
 }
 
 .sobre {
@@ -192,5 +192,75 @@ a:focus {
   footer {
     width: 100%;
     height: auto%;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: var(--cor-secundaria);
+  }
+  .main {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .main-information {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .personal-image {
+    grid-row: auto;
+    width: 8rem;
+    height: 11rem;
+  }
+
+  .links {
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .links a {
+    font-size: 1.1rem;
+  }
+
+  .sobre {
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  #select_language {
+    display: none;
+  }
+
+  .language-img {
+    justify-content: center;
+    gap: 1rem;
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem;
+  }
+
+  h1,
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p,
+  span,
+  a {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  footer {
+    padding: 1rem;
+    text-align: center;
   }
 }
